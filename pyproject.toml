@@ -1,0 +1,31 @@
+# Проект «Прогон»: `uv sync` ставит Python 3.14, pytest и ruff в .venv, а сам пакет progon —
+# в режиме разработки: правки в progon/ видны сразу, без переустановки.
+[project]
+name = "progon"
+version = "0.1.0"
+description = "Автоматическая проверка учебных заданий"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+progon = "progon.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[dependency-groups]
+dev = ["pytest>=9", "ruff>=0.13"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "N"]
