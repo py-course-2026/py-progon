@@ -46,3 +46,4 @@ uv run pytest         # ваши тесты
 | [PRG-4](tickets/04-report-and-excel.md) | 4 | разбор отчёта pytest (JUnit XML), `progon report`, ведомость в CSV для Excel |
 | [PRG-5](tickets/05-domain-model.md) | 5 | модель: `Outcome`, `TestResult`, `Task`, `Student`, `Attempt`, `Course` |
 | [PRG-6](tickets/06-release-0.1.md) | 6 | релиз 0.1: `progon check`, журнал изменений, руководство, пакет wheel, тег |
+| [PRG-7](tickets/07-types-and-description.md) | 7 | `mypy --strict` на весь пакет, `py.typed`, docstring, описание программы по ГОСТ 19.402 |

@@ -11,3 +11,5 @@ mod5 6 PRG-5 · модель
 crs5 4 PRG-5 · курс
 rel6 4 PRG-6 · журнал изменений и руководство
 pkg6 6 PRG-6 · progon check и пакет
+typ7 6 PRG-7 · mypy --strict
+doc7 4 PRG-7 · описание программы и docstring
