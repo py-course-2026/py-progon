@@ -48,3 +48,4 @@ uv run pytest         # ваши тесты
 | [PRG-6](tickets/06-release-0.1.md) | 6 | релиз 0.1: `progon check`, журнал изменений, руководство, пакет wheel, тег |
 | [PRG-7](tickets/07-types-and-description.md) | 7 | `mypy --strict` на весь пакет, `py.typed`, docstring, описание программы по ГОСТ 19.402 |
 | [PRG-8](tickets/08-tests.md) | 8 | свои тесты: покрытие ≥ 85 %, `conftest.py`, тесты не пишут в репозиторий и не зависят друг от друга |
+| [PRG-9](tickets/09-performance.md) | 9 | `progon stats`, скорость на 210 000 попыток, профилирование, `docs/PERFORMANCE.md` |

@@ -15,3 +15,5 @@ typ7 6 PRG-7 · mypy --strict
 doc7 4 PRG-7 · описание программы и docstring
 cov8 6 PRG-8 · покрытие тестами
 hyg8 4 PRG-8 · гигиена тестов
+perf9 6 PRG-9 · stats и скорость
+prof9 4 PRG-9 · отчёт о производительности
