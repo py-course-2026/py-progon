@@ -5,7 +5,13 @@ name = "progon"
 version = "0.1.0"
 description = "Автоматическая проверка учебных заданий"
 requires-python = ">=3.14"
-dependencies = ["fastapi>=0.120", "uvicorn>=0.38"]
+dependencies = [
+    "fastapi>=0.120",
+    "matplotlib>=3.10",
+    "pandas>=3",
+    "scikit-learn>=1.7",
+    "uvicorn>=0.38",
+]
 
 [project.scripts]
 progon = "progon.cli:main"
@@ -30,3 +36,8 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "W", "F", "I", "B", "UP", "N"]
+
+# У pandas, scikit-learn и joblib нет аннотаций типов для mypy — не ругаться на их импорт.
+[[tool.mypy.overrides]]
+module = ["pandas.*", "sklearn.*", "joblib.*"]
+ignore_missing_imports = true
