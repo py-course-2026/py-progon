@@ -67,5 +67,7 @@ def test_wheel_metadata(wheel):
     z = zipfile.ZipFile(wheel)
     info = next(n for n in z.namelist() if n.endswith(".dist-info/METADATA"))
     eps = next(n for n in z.namelist() if n.endswith(".dist-info/entry_points.txt"))
-    assert "Version: 0.1.0" in z.read(info).decode()
+    from progon import __version__
+
+    assert f"Version: {__version__}" in z.read(info).decode()
     assert "progon = progon.cli:main" in z.read(eps).decode()

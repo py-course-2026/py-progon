@@ -53,3 +53,4 @@ uv run pytest         # ваши тесты
 | [PRG-11](tickets/11-storage.md) | 11 | история прогонов в SQLite: миграции, неизменяемость триггерами, `progon run --db`, `progon history` |
 | [PRG-12](tickets/12-http-api.md) | 12 | HTTP API на FastAPI: ключ, сдача решения с прогоном, история, ведомость, проверка имён файлов |
 | [PRG-13](tickets/13-analytics-and-risk.md) | 13 | график по заданиям, модель риска (scikit-learn) против базовой, `POST /risk`, этика |
+| [PRG-14](tickets/14-release-1.0.md) | 14 | выпуск 1.0: версия, руководство, протокол приёмки, отчёт, слайды, защита |
