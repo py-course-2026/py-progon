@@ -50,3 +50,4 @@ uv run pytest         # ваши тесты
 | [PRG-8](tickets/08-tests.md) | 8 | свои тесты: покрытие ≥ 85 %, `conftest.py`, тесты не пишут в репозиторий и не зависят друг от друга |
 | [PRG-9](tickets/09-performance.md) | 9 | `progon stats`, скорость на 210 000 попыток, профилирование, `docs/PERFORMANCE.md` |
 | [PRG-10](tickets/10-runner.md) | 10 | `progon run`: тесты решения в отдельном процессе, таймаут убивает всю группу, параллельный прогон |
+| [PRG-11](tickets/11-storage.md) | 11 | история прогонов в SQLite: миграции, неизменяемость триггерами, `progon run --db`, `progon history` |
