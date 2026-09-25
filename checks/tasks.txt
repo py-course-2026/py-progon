@@ -3,3 +3,5 @@ tz1 6 PRG-1 · черновик ТЗ
 cli1 4 PRG-1 · каркас и progon --version
 tz2 5 PRG-2 · ТЗ, версия 2
 gb2 5 PRG-2 · ведомость
+cmd3 6 PRG-3 · команда gradebook и журнал
+err3 4 PRG-3 · исключения и сообщения об ошибках

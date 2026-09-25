@@ -1,0 +1,75 @@
+{
+  "tasks": {
+    "week01": "2026-09-07T23:59",
+    "week02": "2026-09-14T23:59",
+    "week03": "2026-09-21T23:59"
+  },
+  "students": [
+    {
+      "login": "anna",
+      "name": "Петрова Анна",
+      "group": "ИИ-201"
+    },
+    {
+      "login": "ivan",
+      "name": "Иванов Иван",
+      "group": "ИИ-201"
+    },
+    {
+      "login": "olga",
+      "name": "Орлова Ольга",
+      "group": "ИИ-202"
+    }
+  ],
+  "attempts": [
+    {
+      "login": "anna",
+      "task": "week01",
+      "score": 7,
+      "submitted": "2026-09-06T18:00"
+    },
+    {
+      "login": "anna",
+      "task": "week01",
+      "score": 10,
+      "submitted": "2026-09-07T23:30"
+    },
+    {
+      "login": "anna",
+      "task": "week02",
+      "score": 9,
+      "submitted": "2026-09-15T09:00"
+    },
+    {
+      "login": "ivan",
+      "task": "week01",
+      "score": 10,
+      "submitted": "2026-09-08T12:00"
+    },
+    {
+      "login": "ivan",
+      "task": "week02",
+      "score": 8,
+      "submitted": "2026-09-14T20:00"
+    },
+    {
+      "login": "ivan",
+      "task": "week03",
+      "score": 10,
+      "submitted": "2026-09-25T11:00"
+    },
+    {
+      "login": "olga",
+      "task": "week03",
+      "score": 6,
+      "submitted": "2026-09-21T23:59"
+    }
+  ],
+  "extensions": [
+    {
+      "login": "ivan",
+      "task": "week03",
+      "until": "2026-09-28T23:59"
+    }
+  ]
+}
