@@ -5,7 +5,7 @@ name = "progon"
 version = "0.1.0"
 description = "Автоматическая проверка учебных заданий"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = ["fastapi>=0.120", "uvicorn>=0.38"]
 
 [project.scripts]
 progon = "progon.cli:main"
@@ -18,11 +18,12 @@ build-backend = "uv_build"
 module-root = ""
 
 [dependency-groups]
-dev = ["mypy>=1.18", "pytest>=9", "pytest-cov>=7", "ruff>=0.13"]
+dev = ["httpx>=0.28", "mypy>=1.18", "pytest>=9", "pytest-cov>=7", "ruff>=0.13"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q -p no:cacheprovider"
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient` is deprecated"]
 
 [tool.ruff]
 line-length = 100
