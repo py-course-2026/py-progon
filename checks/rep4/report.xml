@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="2" skipped="2" tests="8" time="0.016" timestamp="2026-09-28T10:15:00.000000+03:00" hostname="runner"><testcase classname="tests.test_basic" name="test_add" time="0.000" /><testcase classname="tests.test_basic" name="test_add_many[1-1-2]" time="0.000" /><testcase classname="tests.test_basic" name="test_add_many[0-0-0]" time="0.000" /><testcase classname="tests.test_basic" name="test_add_many[-1-1-1]" time="0.000"><failure message="assert 0 == 1&#10; +  where 0 = add(-1, 1)">a = -1, b = 1, total = 1
+
+    @pytest.mark.parametrize(("a", "b", "total"), [(1, 1, 2), (0, 0, 0), (-1, 1, 1)])
+    def test_add_many(a, b, total):
+&gt;       assert add(a, b) == total
+E       assert 0 == 1
+E        +  where 0 = add(-1, 1)
+
+tests/test_basic.py:12: AssertionError</failure></testcase><testcase classname="tests.test_basic" name="test_greet" time="0.000"><failure message="AssertionError: приветствие должно заканчиваться восклицательным знаком&#10;assert 'Привет, Анна' == 'Привет, Анна!'&#10;  &#10;  - Привет, Анна!&#10;  ?             -&#10;  + Привет, Анна">def test_greet():
+&gt;       assert greet("Анна") == "Привет, Анна!", "приветствие должно заканчиваться восклицательным знаком"
+E       AssertionError: приветствие должно заканчиваться восклицательным знаком
+E       assert 'Привет, Анна' == 'Привет, Анна!'
+E         
+E         - Привет, Анна!
+E         ?             -
+E         + Привет, Анна
+
+tests/test_basic.py:16: AssertionError</failure></testcase><testcase classname="tests.test_basic" name="test_with_config" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: нет файла config.toml&quot;">@pytest.fixture
+    def config():
+&gt;       raise FileNotFoundError("нет файла config.toml")
+E       FileNotFoundError: нет файла config.toml
+
+tests/test_basic.py:21: FileNotFoundError</error></testcase><testcase classname="tests.test_basic" name="test_later" time="0.000"><skipped type="pytest.skip" message="проверка появится на неделе 10">/home/student/py-week04/tests/test_basic.py:28: проверка появится на неделе 10</skipped></testcase><testcase classname="tests.test_basic" name="test_round" time="0.000"><skipped type="pytest.xfail" message="известная ошибка округления" /></testcase></testsuite></testsuites>
