@@ -44,3 +44,4 @@ uv run pytest         # ваши тесты
 | [PRG-2](tickets/02-tz-v2-gradebook.md) | 2 | ТЗ версии 2 по ответам заказчика: этапы, приёмочные испытания, документация; ведомость |
 | [PRG-3](tickets/03-gradebook-command.md) | 3 | `progon gradebook`, свои исключения, сообщения вместо трассировок, журнал |
 | [PRG-4](tickets/04-report-and-excel.md) | 4 | разбор отчёта pytest (JUnit XML), `progon report`, ведомость в CSV для Excel |
+| [PRG-5](tickets/05-domain-model.md) | 5 | модель: `Outcome`, `TestResult`, `Task`, `Student`, `Attempt`, `Course` |
